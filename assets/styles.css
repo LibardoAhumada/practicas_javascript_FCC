@@ -1,0 +1,34 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+#demo1, #demo2 {
+  margin: auto;
+  font-size: xx-large;
+  font-weight: bold;
+  width: 800px;
+  color: blue;
+  background-color: aqua;
+  text-align: center;
+}
+
+.centring {
+  background-color: black;
+  display: block;
+}
+
+#textInput {
+  margin-top: 100px;
+  margin-left: 400px;
+  border-radius: 10px;
+  height: 50px;
+  width: 400px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: aqua;
+}/*# sourceMappingURL=styles.css.map */
