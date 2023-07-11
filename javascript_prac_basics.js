@@ -85,3 +85,27 @@ function modTwoNumbers() {
   document.getElementById("result6").innerHTML = result6;
   return false; // Para evitar que el formulario se envíe y la página se recargue
 }
+
+/*++++++++++++++++++++++++++++++++++Practice Average  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+function promTwoNumbers() {
+  let num7_a = document.getElementById("num7_a").value;
+  let num7_b = document.getElementById("num7_b").value;
+  let result7 = (parseFloat(num7_a) + parseFloat(num7_b)) / 2;
+  document.getElementById("result7").innerHTML = result7;
+  return false; // Para evitar que el formulario se envíe y la página se recargue
+}
+
+/*++++++++++++++++++++++++++++++++++Practice Average  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+function incDecTwoNumbers() {
+  let num8_a = parseFloat(document.getElementById("num8_a").value);
+  let num8_b = parseFloat(document.getElementById("num8_b").value);
+  
+  num8_a++;
+  num8_b--;
+  
+  document.getElementById("result8").innerHTML = num8_a + ", " + num8_b;
+  
+  return false; // Para evitar que el formulario se envíe y la página se recargue
+}
