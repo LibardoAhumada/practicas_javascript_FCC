@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">   
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">   
     <title>Document</title>
 </head>
 <body>
+  <!-- +++++++++++++++++++++++++++++++++Activity: change the Title++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <header class = "centring">
 <h1 id = demo1><title>Titulo Original</title></h1>
-<h2 id = demo2>Saludo</h2>
+<h2 id = demo2>Subtitulo Original</h2>
 </header>
 
 <form id="myForm" onsubmit="return changeTitle()">
@@ -19,6 +21,182 @@
     <button type="submit">Mostrar en pantalla</button>
   </form>
 
-<script src="./javascript_prac_basics.js"></script>    
+<hr class = "line">
+
+
+<!-- +++++++++++++++++++++++++++++++++First Card: Activity Sum +++++++++++++++++++++++++++++++++++++++++++++-->
+<div>
+<h2 class = "textcent">Practicas con Operaciones Matemáticas Básicas</h2>
+</div>
+<section class = "section1">
+<div class="card" style="width: 18rem;">
+  <img src="./assets/media/matematicas-e1551990337130.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Suma JavaScript</h5>
+    <p class="card-text">Escribe dos numeros y obtendras la suma de estos:</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <form id="myform2" onsubmit="return sumTwoNumbers()">
+        <input type="number" id="num1_a" placeholder="Ingrese el 1er número">
+        <h3>+</h3>
+        <input type="number" id="num1_b" placeholder="Ingrese el 2o número">
+        <h3>=</h3>
+        <button type="submit">Mostrar Resultado</button>
+        <h3 id="result1">Resultado</h3>
+      </form>      
+  </li>
+  </ul>
+</div>
+<!--++++++++++++++++++++++++++++++++++++++Second Card Rest ++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div class="card" style="width: 18rem;">
+  <img src="./assets/media/matematicas_22cf5007_1200x630.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Rest JavaScript</h5>
+    <p class="card-text">Escribe dos numeros y obtendras la resta de estos:</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <form id="myform3" onsubmit="return restTwoNumbers()">
+        <input type="number" id="num2_a" placeholder="Ingrese el 1er número">
+        <h3>-</h3>
+        <input type="number" id="num2_b" placeholder="Ingrese el 2o número">
+        <h3>=</h3>
+        <button type="submit">Mostrar Resultado</button>
+        <h3 id="result2">Resultado</h3>
+      </form>      
+  </li>
+  </ul>
+</div>
+<!-- ++++++++++++++++++++++++++++++++++++Third Card Multiplication +++++++++++++++++++++++++++++++++++++++++-->
+<div class="card" style="width: 18rem;">
+  <img src="./assets/media/mate.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Multiplication JavaScript</h5>
+    <p class="card-text">Escribe dos numeros y obtendras la multiplicación de estos:</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <form id="myform2" onsubmit="return multiTwoNumbers()">
+        <input type="number" id="num3_a" placeholder="Ingrese el 1er número">
+        <h3>*</h3>
+        <input type="number" id="num3_b" placeholder="Ingrese el 2o número">
+        <h3>=</h3>
+        <button type="submit">Mostrar Resultado</button>
+        <h3 id="result3">Resultado</h3>
+      </form>      
+  </li>
+  </ul>
+</div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++Fourth Card Divide +++++++++++++++++++++++++++++++++++++++++++-->
+<div class="card" style="width: 18rem;">
+  <img src="./assets/media/mate3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">División en JavaScript</h5>
+    <p class="card-text">Escribe dos numeros y obtendras la división del primero entre el segundo:</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <form id="myform2" onsubmit="return divTwoNumbers()">
+        <input type="number" id="num4_a" placeholder="Ingrese el 1er número">
+        <h3>/</h3>
+        <input type="number" id="num4_b" placeholder="Ingrese el 2o número">
+        <h3>=</h3>
+        <button type="submit">Mostrar Resultado</button>
+        <h3 id="result4">Resultado</h3>
+      </form>      
+  </li>
+  </ul>
+</div>
+</section>
+  <!--+++++++++++++++++++++++++++++++++++++++++++++Fifth Card Divide +++++++++++++++++++++++++++++++++++++++++++-->
+
+<section class = "section1">
+  <div class="card" style="width: 18rem;">
+    <img src="./assets/media/mate3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Potencias en JavaScript</h5>
+      <p class="card-text">Escribe dos numeros y Obtendras el primer nuemro elevado al a potencia del segundo:</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <form id="myform2" onsubmit="return potTwoNumbers()">
+          <input type="number" id="num5_a" placeholder="Ingrese el 1er número">
+          <h3>^</h3>
+          <input type="number" id="num5_b" placeholder="Ingrese el 2o número">
+          <h3>=</h3>
+          <button type="submit">Mostrar Resultado</button>
+          <h3 id="result5">Resultado</h3>
+        </form>      
+    </li>
+    </ul>
+  </div>
+  <!--++++++++++++++++++++++++++++++++++++++Sixth Card Rest ++++++++++++++++++++++++++++++++++++++++++++++++-->
+  <div class="card" style="width: 18rem;">
+    <img src="./assets/media/mate.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Module JavaScript</h5>
+      <p class="card-text">Escribe dos numeros y obtendras el residuo de la división de estos:</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <form id="myform3" onsubmit="return modTwoNumbers()">
+          <input type="number" id="num6_a" placeholder="Ingrese el 1er número">
+          <h3>mod</h3>
+          <input type="number" id="num6_b" placeholder="Ingrese el 2o número">
+          <h3>=</h3>
+          <button type="submit">Mostrar Resultado</button>
+          <h3 id="result6">Resultado</h3>
+        </form>      
+    </li>
+    </ul>
+  </div>
+  <!-- ++++++++++++++++++++++++++++++++++++Seven Card Multiplication +++++++++++++++++++++++++++++++++++++++++-->
+  <div class="card" style="width: 18rem;">
+    <img src="./assets/media/matematicas_22cf5007_1200x630.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Multiplication JavaScript</h5>
+      <p class="card-text">Escribe dos numeros y obtendras la multiplicación de estos:</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <form id="myform2" onsubmit="return multiTwoNumbers()">
+          <input type="number" id="num3_a" placeholder="Ingrese el 1er número">
+          <h3>*</h3>
+          <input type="number" id="num3_b" placeholder="Ingrese el 2o número">
+          <h3>=</h3>
+          <button type="submit">Mostrar Resultado</button>
+          <h3 id="result3">Resultado</h3>
+        </form>      
+    </li>
+    </ul>
+  </div>
+  <!--+++++++++++++++++++++++++++++++++++++++++++++Eight Card Divide +++++++++++++++++++++++++++++++++++++++++++-->
+  <div class="card" style="width: 18rem;">
+    <img src="./assets/media/matematicas-e1551990337130.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">División de JavaScript</h5>
+      <p class="card-text">Escribe dos numeros y obtendras la división de estos:</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <form id="myform2" onsubmit="return divTwoNumbers()">
+          <input type="number" id="num4_a" placeholder="Ingrese el 1er número">
+          <h3>/</h3>
+          <input type="number" id="num4_b" placeholder="Ingrese el 2o número">
+          <h3>=</h3>
+          <button type="submit">Mostrar Resultado</button>
+          <h3 id="result4">Resultado</h3>
+        </form>      
+    </li>
+    </ul>
+  </div>
+  </section>
+
+<hr class = "line">
+
+
+<script src="./javascript_prac_basics.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
 </body>
 </html>

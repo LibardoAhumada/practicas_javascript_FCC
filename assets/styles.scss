@@ -8,19 +8,18 @@
     font-size: xx-large;
     font-weight: bold;
     width: 800px;
-    color: blue;
-    background-color: aqua;
+    color: black;
+    background-image: url(./media/javascript\ icon.png);
     text-align: center;
 }
 
 .centring {
-    background-color: black;
+    background-color: yellow;
    display: block;
 }
 
 #textInput {
-    margin-top: 100px;
-    margin-left: 400px;
+    margin-left: 525px;
     border-radius: 10px;
     height: 50px;
     width: 400px;   
@@ -30,5 +29,35 @@ button {
     height: 50px;
     width: 200px;
     border-radius: 10px;
-    background-color: aqua;
+    background-color: yellow;
+}
+
+#h31 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    margin-top: 230px;
+}
+.line {
+    margin-top: 300px;
+    color: black;
+}
+#result1 {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.section1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.card {
+    margin-top: 50px;
+}
+
+.textcent {
+    background-color: yellow;
+    font-size: xx-large;
+    text-align: center;
 }
